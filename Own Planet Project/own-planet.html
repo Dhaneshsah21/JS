@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqualis - The Ocean Planet</title>
+<style>
+/* 🌊 Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at bottom, #001f3f, #000814);
+  color: #d6f0ff;
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* 🪸 Header */
+header {
+  background: rgba(0, 60, 100, 0.6);
+  padding: 40px 20px;
+  backdrop-filter: blur(8px);
+}
+header h1 {
+  font-size: 3rem;
+  color: #00bfff;
+  text-shadow: 0 0 15px #00bfff;
+}
+header p {
+  color: #a8e6ff;
+  font-size: 1.2rem;
+}
+
+/* ✨ Sections */
+section {
+  padding: 40px 20px;
+}
+h2 {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* 🐚 Feature Boxes */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.feature-box {
+  background: rgba(0, 40, 70, 0.6);
+  border: 1px solid #0099cc;
+  border-radius: 15px;
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+/* 🌊 Ocean Section */
+.ocean {
+  background: linear-gradient(to top, #001f3f, #002b55);
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+button {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #0099cc;
+}
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-style: italic;
+  color: #a0eaff;
+}
+
+/* 🌬️ Bubble Animation */
+.bubble {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* 🌊 Footer */
+footer {
+  background: #000d1a;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #66cfff;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 AQUALIS</h1>
+  <p>The Ocean Planet of Endless Depths</p>
+</header>
+
+<section class="intro">
+  <h2>Welcome to Aqualis</h2>
+  <p>
+    Aqualis is a mesmerizing planet covered entirely by deep oceans.
+    Its floating cities shimmer beneath glowing jellyfish skies,
+    where communication flows through light waves and currents of color.
+  </p>
+</section>
+
+<section class="features">
+  <h2>🌌 Planet Highlights</h2>
+  <div class="feature-box">
+    <h3>💧 Floating Cities</h3>
+    <p>Massive coral-built cities drift across the water surface, powered by tidal energy.</p>
+  </div>
+  <div class="feature-box">
+    <h3>🐠 Aquatic Life</h3>
+    <p>From glowing fish to giant sea serpents, Aqualis hosts a breathtaking array of creatures.</p>
+  </div>
+  <div class="feature-box">
+    <h3>🔮 Light Communication</h3>
+    <p>Inhabitants speak through patterns of light, illuminating the dark ocean depths.</p>
+  </div>
+</section>
+
+<section class="ocean">
+  <h2>🌊 Dive Deeper</h2>
+  <p>Explore the glowing beauty of Aqualis below the waves...</p>
+  <button onclick="revealSecret()">Discover the Secret</button>
+  <p id="secret" class="hidden">✨ The heart of Aqualis is a crystal core that sings with ocean energy.</p>
+</section>
+
+<footer>
+  <p>Made by Dhanesh — Welcome to the world of Aqualis 💙</p>
+</footer>
+
+
+
+
+</body>
+</html>
